@@ -3,7 +3,7 @@ CFLAGS = -O2 -g -static
 TARGET = ioctl
 
 $(TARGET): $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS) -lpthread
 
 all: $(TARGET)
 
